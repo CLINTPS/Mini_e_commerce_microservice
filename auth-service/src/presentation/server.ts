@@ -25,7 +25,7 @@ app.use((err:Error, req:Request, res:Response, next:NextFunction)=>{
 })
 
 app.listen(PORT,()=>{
-    console.log(`Connected to PORT : ${PORT}`);
+    console.log(`Connected to auth-service at port ${PORT}`);
 })
 
 export default app;

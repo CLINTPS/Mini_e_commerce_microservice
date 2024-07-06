@@ -28,20 +28,6 @@ export const signupController = (dependencies:IDependencies)=>{
                 return;
             }
 
-            // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            // if(!emailRegex.test(credentials.email)){
-            //     res.status(400).json({success:false, message:"Invalid email format"});
-            //     return;
-            // }
-
-            // if(credentials.password.length<6){
-            //     res.status(400).json({success:false, message:"Password must be at least 6 characters long"});
-            //     return;
-            // }
-
-
-
             try {
                 const existingUser = await findUserByEmailUseCase(dependencies).execute(value.email);
                 // console.log("🚀 ~ file: signup.ts:37 ~ signupController ~ existingUser:", existingUser)

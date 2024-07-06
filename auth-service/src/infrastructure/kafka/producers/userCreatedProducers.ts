@@ -26,7 +26,8 @@ export const userCreatedProducer = async (
                     key:'userCreated',
                     value:JSON.stringify(data)
                 }]
-            }
+            };
+            
             console.log("🚀 ~ file: userCreatedProducers.ts:30 ~ message:", message)
             await producer.send(message)
         // console.log("AddUser 5th location")

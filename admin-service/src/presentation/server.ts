@@ -24,7 +24,7 @@ app.use((err:Error,req:Request,res:Response,next:NextFunction)=>{
 })
 
 app.listen(PORT,()=>{
-    console.log(`Connected to Admin-Service ${PORT}`);
+    console.log(`Connected to admin-service at port ${PORT}`);
     
 })
 

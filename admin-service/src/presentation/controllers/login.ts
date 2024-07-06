@@ -9,6 +9,7 @@ export const loginController = (dependencies:IDependencies)=>{
         try {
             const adminCredentials = req.body;
             const admin:AdminEntity | null = await loginAdminUseCase(dependencies).execute(adminCredentials)
+            // console.log("🚀 ~ file: login.ts:12 ~ loginAdmin ~ admin:", admin)
             if(admin){
                 if(admin.role === 'admin'){
                     let payload ={

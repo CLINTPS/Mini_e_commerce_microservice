@@ -23,7 +23,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`connected to auth service at ${PORT}`);
+  console.log(`Connected to cart-service at port ${PORT}`);
 });
 
 export default app;

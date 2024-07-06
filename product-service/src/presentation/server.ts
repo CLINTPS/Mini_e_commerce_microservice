@@ -25,7 +25,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   
 
 app.listen(PORT, () => {
-    console.log(`connected to product service at ${PORT}`) 
+    console.log(`Connected to product-service at port ${PORT}`) 
 }) 
 
 export default app;
