@@ -1,2 +1,2 @@
 export * from "./IAddProductUseCase"
-export * from "./IListProductUsecase"
+export * from "./IListProductUseCase"

@@ -1,2 +1,2 @@
 export * from "./AddProductUseCase"
-export * from "./listProductsUseCase"
+export * from "./listProductUseCase"

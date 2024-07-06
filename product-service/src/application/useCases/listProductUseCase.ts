@@ -1,4 +1,4 @@
-import { IDependencies } from "../interface/IDependencies";
+import { IDependencies } from "../interfaces/IDependencies";
 
 export const listProductUseCase=(dependencies:IDependencies)=>{
     const {repositories:{listProduct}}=dependencies;

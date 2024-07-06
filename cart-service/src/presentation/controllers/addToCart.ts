@@ -12,6 +12,8 @@ export const addToCartController=(dependencies:IDependencies)=>{
          
 
             const user:CartEntity | null =await addToCartUseCase(dependencies).execute(data)
+            console.log("🚀 ~ file: addToCart.ts:15 ~ returnasync ~ user:", user)
+            
             res.status(200).json({
                 success: true,
                 user: user,
