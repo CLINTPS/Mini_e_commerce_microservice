@@ -11,6 +11,8 @@ const PORT=process.env.PORT || 4000
 app.use(cors())
 app.use(express.json());
 app.use(cookieParser());
+console.log("Check");
+
 
 app.use("/auth",proxy("http://localhost:4001/"))
 app.use("/admin",proxy("http://localhost:4002/"))
